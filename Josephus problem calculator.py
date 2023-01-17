@@ -4,10 +4,10 @@ def findTheWinner(n, k):
         
 def josephus(ls, skip):
     skip -= 1 
-    idx = skip
+    index= skip
     while len(ls) > 1:
-        ls.pop(idx)
-        idx = (idx + skip) % len(ls)
+        ls.pop(index)
+        idx = (index + skip) % len(ls)
     return ls[0]
 
 findTheWinner(10, 3)
